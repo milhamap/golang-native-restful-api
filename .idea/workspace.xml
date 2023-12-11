@@ -5,25 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df51da56-cd4d-45fa-a217-27608ca18e5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/simple/bar.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/configuration.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/connection.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/database.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/file.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/foo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/foo_bar.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/foobar.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/injector.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple/simple.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/simple_service_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/belajar-golang-restful-api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/injector.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/category_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/category_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/category_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/category_repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/category_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/category_service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 7
@@ -53,9 +44,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build belajar-golang-restful-api.executor": "Run",
+    "Go Test.TestConnection in belajar-golang-restful-api/test.executor": "Run",
     "Go Test.TestSimpleService in belajar-golang-restful-api/test.executor": "Run",
     "Go Test.TestSimpleServiceError in belajar-golang-restful-api/test.executor": "Run",
     "Go Test.TestSimpleServiceSuccess in belajar-golang-restful-api/test.executor": "Run",
+    "HTTP Request.test | Get all categories.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -71,14 +65,14 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="Go Test.TestConnection in belajar-golang-restful-api/test">
-    <configuration name="go build wire_gen.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="HTTP Request.test | Get all categories">
+    <configuration name="go build belajar-golang-restful-api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="belajar-golang-dependency" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
+      <kind value="PACKAGE" />
       <package value="belajar-golang-restful-api" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/simple/wire_gen.go" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="TestConnection in belajar-golang-restful-api/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -91,18 +85,6 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTestConnection\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSimpleService in belajar-golang-restful-api/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="belajar-golang-dependency" />
-      <working_directory value="$PROJECT_DIR$/test" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="belajar-golang-restful-api/test" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestSimpleService\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSimpleServiceError in belajar-golang-restful-api/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -129,13 +111,16 @@
       <pattern value="^\QTestSimpleServiceSuccess\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="test | Get all categories" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test.http" requestIdentifier="Get all categories" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.test | Get all categories" />
+        <item itemvalue="Go Build.go build belajar-golang-restful-api" />
         <item itemvalue="Go Test.TestConnection in belajar-golang-restful-api/test" />
         <item itemvalue="Go Test.TestSimpleServiceSuccess in belajar-golang-restful-api/test" />
         <item itemvalue="Go Test.TestSimpleServiceError in belajar-golang-restful-api/test" />
-        <item itemvalue="Go Test.TestSimpleService in belajar-golang-restful-api/test" />
-        <item itemvalue="Go Build.go build wire_gen.go" />
       </list>
     </recent_temporary>
   </component>

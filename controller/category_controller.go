@@ -13,7 +13,8 @@ type CategoryController struct {
 	CategoryService service.CategoryServiceInterface
 }
 
-func NewCategoryController(serviceInterface service.CategoryServiceInterface) CategoryControllerInterface {
+// belajar wire bind
+func NewCategoryController(serviceInterface service.CategoryServiceInterface) *CategoryController {
 	return &CategoryController{
 		CategoryService: serviceInterface,
 	}

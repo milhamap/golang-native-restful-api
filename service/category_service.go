@@ -17,7 +17,8 @@ type CategoryService struct {
 	Validate           *validator.Validate
 }
 
-func NewCategoryService(categoryRepository repository.CategoryRepositoryInterface, DB *sql.DB, validate *validator.Validate) CategoryServiceInterface {
+// belajar wire bind
+func NewCategoryService(categoryRepository repository.CategoryRepositoryInterface, DB *sql.DB, validate *validator.Validate) *CategoryService {
 	return &CategoryService{
 		CategoryRepository: categoryRepository,
 		DB:                 DB,

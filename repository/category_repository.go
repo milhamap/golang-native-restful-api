@@ -11,7 +11,8 @@ import (
 type CategoryRepository struct {
 }
 
-func NewCategoryRepository() CategoryRepositoryInterface {
+// belajar wire bind
+func NewCategoryRepository() *CategoryRepository {
 	return &CategoryRepository{}
 }
 
