@@ -31,7 +31,7 @@ func InitializedServer() *http.Server {
 	categoryController := controller.NewCategoryController(categoryService)
 	router := app.NewRouter(categoryController)
 	authMiddleware := middleware.NewAuthMiddleware(router)
-	server := NewServer(authMiddleware)
+	server := app.NewServer(authMiddleware)
 	return server
 }
 

@@ -5,6 +5,134 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
+<> 2023-12-14T182532.200.json
+
+###
+
+DELETE http://localhost:3000/api/categories/2
+X-API-KEY: RAHASIA
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T182529.200.json
+
+###
+
+GET http://localhost:3000/api/categories
+X-API-KEY: RAHASIA
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T182521.200.json
+
+###
+
+PUT http://localhost:3000/api/categories/2
+X-API-KEY: RAHASIA
+Accept: application/json
+Content-Type: application/json
+Content-Length: 23
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Fashion"
+}
+
+<> 2023-12-14T182516.200.json
+
+###
+
+GET http://localhost:3000/api/categories/2
+X-API-KEY: RAHASIA
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T182507.200.json
+
+###
+
+GET http://localhost:3000/api/categories/5
+X-API-KEY: RAHASIA
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T182501.404.json
+
+###
+
+GET http://localhost:3000/api/categories
+X-API-KEY: RAHASIA
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T182455.200.json
+
+###
+
+POST http://localhost:3000/api/categories
+X-API-KEY: RAHASIA
+Accept: application/json
+Content-Type: application/json
+Content-Length: 20
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Food"
+}
+
+<> 2023-12-14T182452.200.json
+
+###
+
+POST http://localhost:3000/api/categories
+X-API-KEY: RAHASIA
+Accept: application/json
+Content-Type: application/json
+Content-Length: 20
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Food"
+}
+
+<> 2023-12-14T182450.200.json
+
+###
+
+GET http://localhost:3000/api/categories
+X-API-KEY: RAHASIA
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-12-14T182447.200.json
+
+###
+
+GET http://localhost:3000/api/categories
+X-API-KEY: RAHASIA
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
 <> 2023-12-11T101854.200.json
 
 ###

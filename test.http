@@ -14,12 +14,12 @@ Content-Type: application/json
 }
 
 ### Get a category
-GET http://localhost:3000/api/categories/5
+GET http://localhost:3000/api/categories/2
 X-API-KEY: RAHASIA
 Accept: application/json
 
 ### Update a category
-PUT http://localhost:3000/api/categories/4
+PUT http://localhost:3000/api/categories/2
 X-API-KEY: RAHASIA
 Accept: application/json
 Content-Type: application/json
@@ -29,6 +29,6 @@ Content-Type: application/json
 }
 
 ### Delete a category
-DELETE http://localhost:3000/api/categories/3
+DELETE http://localhost:3000/api/categories/2
 X-API-KEY: RAHASIA
 Accept: application/json

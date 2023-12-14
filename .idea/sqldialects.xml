@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214080224_create_category_table.down.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214080224_create_category_table.up.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214090941_create_first_table.down.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214090941_create_first_table.up.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214090953_create_second_table.down.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214090953_create_second_table.up.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214090959_create_third_table.down.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214090959_create_third_table.up.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214101138_sample_dirty_state.down.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/db/migrations/20231214101138_sample_dirty_state.up.sql" dialect="MySQL" />
+  </component>
+</project>
